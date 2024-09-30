@@ -12,8 +12,8 @@ Created on Thu, 26 Sept 2024, 20:49:00
         - gymnasium documentations for mountain car
 """
 import gymnasium as gym
-from alive_progress import alive_bar
 import matplotlib.pyplot as plt
+from alive_progress import alive_bar
 
 class ENV:
     def __init__(self, env_name, render_mode, episodes, seed, limit_range, save_path):
