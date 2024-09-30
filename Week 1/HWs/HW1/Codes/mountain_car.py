@@ -69,7 +69,7 @@ class ENV:
 
 
 if __name__ == "__main__":
-    mountain_car = ENV("MountainCar-v0", "human", 100, 42, [-1.2, 0.6], "/home/setare/Reinforcement Learning/Week 1/HWs/HW1/Images/output/output.png")
+    mountain_car = ENV("MountainCar-v0", "human", 10000, 42, [-1.2, 0.6], "/home/setare/Reinforcement Learning/Week 1/HWs/HW1/Images/output/output.png")
     mountain_car.env_creator()
     mountain_car.active_plot_creator()
     mountain_car.run()
