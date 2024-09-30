@@ -31,9 +31,9 @@ class ENV:
     def active_plot_creator(self):
         plt.ion()
         fig, self.ax = plt.subplots()
-        self.x_data = []
-        self.y_data = []  # Data for plotting
-        self.line, = self.ax.plot(self.x_data, self.y_data, 'r-')  # Plot an empty line (will be updated)
+        self.x_data = []  # Data for plotting in x axis
+        self.y_data = []  # Data for plotting in y axis
+        self.line, = self.ax.plot(self.x_data, self.y_data, 'r-')  # initial plot
 
         # Plot configuration
         self.ax.set_xlim(0, self.episode_number)
@@ -42,19 +42,23 @@ class ENV:
     def run(self):
         with alive_bar(self.episode_number) as bar:
             for step in range(self.episode_number):
-                # Sample random action from the environment
+                # random action from the environment
                 action = self.env.action_space.sample()
                 observation, reward, terminated, truncated, info = self.env.step(action)
 
                 # Update the plot every 100 steps
-                if step % 10 == 0:
+                if step % 10 == 0: # it would be better if change the 10 by the update_rate param to make the code more clean
                     self.x_data.append(step)
-                    self.y_data.append(observation[0])  # observation space: Box([-1.2 -0.07], [0.6 0.07], (2,), float32)
+                    self.y_data.append(observation[0])  # from gym doc:
+                                                        # observation space: Box([-1.2 -0.07], [0.6 0.07], (2,), float32)
                                                         # the zero param is position of the car along the x-axis
                     self.line.set_xdata(self.x_data)
                     self.line.set_ydata(self.y_data)
                     self.ax.relim()
                     self.ax.autoscale_view()
+                    plt.title("mountain car position figure")
+                    plt.ylabel("episodes")
+                    plt.xlabel("position of the car along the x-axis")
                     plt.draw()
                     plt.pause(0.001)
 
@@ -65,7 +69,7 @@ class ENV:
 
             self.env.close()
             plt.ioff()  # Turn off interactive mode
-            self.ax.figure.savefig(self.output)  # Display the final plot
+            self.ax.figure.savefig(self.output)  # save the final plot
 
 
 if __name__ == "__main__":
