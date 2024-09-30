@@ -7,6 +7,9 @@ Semester: 4031 | Fall 2024
 Student: STRH 
 Created on Thu, 26 Sept 2024, 20:49:00
     HW1: Test Mountain Car Environment
+    refs:
+        - stackoverflow for creating interactive plot
+        - gymnasium documentations for mountain car
 """
 import gymnasium as gym
 from alive_progress import alive_bar
