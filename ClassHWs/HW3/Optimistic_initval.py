@@ -136,40 +136,5 @@ def figure_opt(runs=2000, time=1000):
     plt.savefig('figure_opt.png')
     plt.close()
 
-
-def figure_compare(runs=2000, time=1000):
-    labels = ['epsilon-greedy', 'gradient bandit',
-              'UCB', 'optimistic initialization']
-    generators = [lambda epsilon: Bandit(epsilon=epsilon, sample_averages=True),
-                  lambda alpha: Bandit(gradient=True, step_size=alpha, gradient_baseline=True),
-                  lambda coef: Bandit(epsilon=0, UCB_param=coef, sample_averages=True),
-                  lambda initial: Bandit(epsilon=0, initial=initial, step_size=0.1)]
-    parameters = [np.arange(0, 4, dtype=np.float),
-                  np.arange(0, 4, dtype=np.float),
-                  np.arange(0, 4, dtype=np.float),
-                  np.arange(0, 4, dtype=np.float)]
-
-    bandits = []
-    for generator, parameter in zip(generators, parameters):
-        for param in parameter:
-            bandits.append(generator(pow(2, param)))
-
-    _, average_rewards = simulate(runs, time, bandits)
-    rewards = np.mean(average_rewards, axis=1)
-
-    i = 0
-    for label, parameter in zip(labels, parameters):
-        l = len(parameter)
-        plt.plot(parameter, rewards[i:i+l], label=label)
-        i += l
-    plt.xlabel('Parameter($2^x$)')
-    plt.ylabel('Average reward')
-    plt.legend()
-
-    plt.savefig('figure_comp.png')
-    plt.close()
-
-
 if __name__ == '__main__':
     figure_opt()
-    figure_compare()
