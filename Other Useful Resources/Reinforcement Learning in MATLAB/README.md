@@ -36,7 +36,7 @@ These materials represent my learning journey through the courses and include:
 
 
 ### Language Note
-The original courses is taught in Persian (فارسی), and all of the notes contain **Persian** content.
+The original courses are taught in Persian (فارسی), and all of the notes contain **Persian** content.
 
 > [!NOTE]\
 > This is a personal educational repository. The courses content rights belong to Omid Zandi and Faradars platform.
