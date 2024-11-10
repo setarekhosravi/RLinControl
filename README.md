@@ -67,8 +67,8 @@ This course explores the intersection of Reinforcement Learning and Control Syst
 
 ### Contributors
 
-* (Setareh Khosravi)[https://github.com/setarekhosravi/] (Repository Owner, IUST Student)
-* (Mobina Lashgari)[https://github.com/mobina-lashgari] (IUST Student & Contributor)
+* (Setareh Khosravi)[https://github.com/setarekhosravi/]: Repository Owner, IUST Student
+* (Mobina Lashgari)[https://github.com/mobina-lashgari]: IUST Student & Contributor
 * Claude (This README creator 😂)
 
 ### Resources and References
