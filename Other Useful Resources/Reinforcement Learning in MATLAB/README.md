@@ -6,19 +6,19 @@ This directory contains my study materials from the Persian language courses "Re
 
 ### Contents
 
-* **Handnotes:** My personal notes taken while following the course
+* **Handnotes:** My personal notes taken while following the courses
 * **Codes:** Implementation of reinforcement learning algorithms in MATLAB
 
 ### Course Information
 
 <div align="justify">
-This course is available on Faradars (فرادرس), a Persian educational platform, and teaches reinforcement learning concepts with practical implementations in MATLAB. The course is instructed by Omid Zandi in Persian language.
+These courses are available on Faradars (فرادرس), a Persian educational platform, and teaches reinforcement learning concepts with practical implementations in MATLAB. The courses are instructed by Omid Zandi in Persian language.
 </div>
 
 ### Acknowledgment
 
 <div align="justify">
-The original course is created and taught by Omid Zandi on Faradars platform. This directory contains my personal study materials and implementations based on the course content.
+The original courses are created and taught by Omid Zandi on Faradars platform. This directory contains my personal study materials and implementations based on the courses content.
 </div>
 
 * [Course 1: RL in MATLAB](https://faradars.org/courses/fvml002-reinforcement-learning-using-matlab)
@@ -28,15 +28,15 @@ The original course is created and taught by Omid Zandi on Faradars platform. Th
 ### Personal Use
 
 <div align="justify">
-These materials represent my learning journey through the course and include:
+These materials represent my learning journey through the courses and include:
 </div>
 
-* Personal notes from course lectures
+* Personal notes from courses lectures
 * MATLAB implementations of the concepts taught
 
 
 ### Language Note
-The original course is taught in Persian (فارسی), and all of the notes contain **Persian** content.
+The original courses is taught in Persian (فارسی), and all of the notes contain **Persian** content.
 
 > [!NOTE]\
-> This is a personal educational repository. The course content rights belong to Omid Zandi and Faradars platform.
+> This is a personal educational repository. The courses content rights belong to Omid Zandi and Faradars platform.
