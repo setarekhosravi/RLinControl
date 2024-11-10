@@ -1,7 +1,7 @@
 # Reinforcement Learning in MATLAB Course Resources
 
 <div align="justify">
-This directory contains my study materials from the Persian language course "Reinforcement Learning in MATLAB" taught by Omid Zandi on the Faradars platform.
+This directory contains my study materials from the Persian language courses "Reinforcement Learning in MATLAB" and "Reinforcement Learning for Control Engineering" taught by Omid Zandi on the Faradars platform.
 </div>
 
 ### Contents
@@ -21,8 +21,8 @@ This course is available on Faradars (فرادرس), a Persian educational platf
 The original course is created and taught by Omid Zandi on Faradars platform. This directory contains my personal study materials and implementations based on the course content.
 </div>
 
-* [Course 1](https://faradars.org/courses/fvml002-reinforcement-learning-using-matlab)
-* [Course 2](https://faradars.org/courses/reinforcement-learning-for-control-fvee0052)
+* [Course 1: RL in MATLAB](https://faradars.org/courses/fvml002-reinforcement-learning-using-matlab)
+* [Course 2: RL for Control](https://faradars.org/courses/reinforcement-learning-for-control-fvee0052)
 
 
 ### Personal Use
